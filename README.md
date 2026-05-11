@@ -103,7 +103,7 @@ Foram realizadas as seguintes etapas:
 
 - Acesso ao painel AWS
 - Seleção do serviço EC2
-- Escolha da AMI Amazon Linux
+- Escolha da AMI Amazon Windows
 - Escolha do tipo de instância `t2.micro`
 - Configuração da chave SSH
 - Inicialização da instância
@@ -123,10 +123,16 @@ Configuração das portas:
 
 ## 3. Conexão SSH
 
-Comando utilizado para conexão remota:
+Para acessar a instância EC2 foi utilizado o terminal do Windows (PowerShell) com o seguinte comando:
 
-```bash
-ssh -i chave.pem ec2-user@IP-DA-INSTANCIA
+```powershell
+ssh -i "caminho-da-chave\chave.pem" ec2-user@IP-DA-INSTANCIA
+```
+
+Exemplo:
+
+```powershell
+ssh -i "C:\Users\Anthony\Downloads\aws-key.pem" ec2-user@54.123.000.00
 ```
 
 ---
@@ -195,7 +201,8 @@ Esses desafios contribuíram para um aprendizado mais completo da plataforma.
 - Git
 - GitHub
 - Markdown
-- Linux
+- Windows
+- Power Shell
 
 ---
 
