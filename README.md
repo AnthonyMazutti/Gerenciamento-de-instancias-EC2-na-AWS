@@ -207,12 +207,10 @@ aws-ec2-lab/
 ├── README.md
 │
 └── images/
-    ├── dashboard-aws.png
-    ├── ec2-dashboard.png
-    ├── instancias-ec2.png
-    ├── security-groups.png
-    ├── s3-dashboard.png
-    └── instancia-rodando.png
+    ├── Dashboard-Aws.jpeg
+    ├── EC2-AWS.jpeg
+    ├── Instâncias-AWS.jpeg
+    ├── Security-Group-AWS.jpeg
 ```
 
 ---
