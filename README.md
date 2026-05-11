@@ -69,3 +69,23 @@ Comando utilizado para acesso remoto:
 
 ```bash
 ssh -i chave.pem ec2-user@IP-DA-INSTANCIA
+
+## Aprendizados
+
+Durante o desenvolvimento deste laboratório, foi possível aprender:
+
+Como criar servidores virtuais na AWS
+Funcionamento básico do Amazon EC2
+Diferença entre IP público e privado
+Importância dos grupos de segurança
+Configuração de acesso SSH
+Organização de documentação técnica no GitHub
+Dificuldades Encontradas
+
+## Algumas dificuldades encontradas durante o laboratório:
+
+Configuração correta do Security Group
+Entendimento das permissões da chave .pem
+Conexão SSH inicial com a instância
+
+Esses desafios ajudaram no aprendizado prático da plataforma AWS.
