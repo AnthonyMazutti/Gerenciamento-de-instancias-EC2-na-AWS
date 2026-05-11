@@ -103,7 +103,7 @@ Foram realizadas as seguintes etapas:
 
 - Acesso ao painel AWS
 - Seleção do serviço EC2
-- Escolha da AMI Amazon Linux
+- Escolha da AMI Amazon Windows
 - Escolha do tipo de instância `t2.micro`
 - Configuração da chave SSH
 - Inicialização da instância
@@ -123,10 +123,16 @@ Configuração das portas:
 
 ## 3. Conexão SSH
 
-Comando utilizado para conexão remota:
+Para acessar a instância EC2 foi utilizado o terminal do Windows (PowerShell) com o seguinte comando:
 
-```bash
-ssh -i chave.pem ec2-user@IP-DA-INSTANCIA
+```powershell
+ssh -i "caminho-da-chave\chave.pem" ec2-user@IP-DA-INSTANCIA
+```
+
+Exemplo:
+
+```powershell
+ssh -i "C:\Users\Anthony\Downloads\aws-key.pem" ec2-user@54.123.000.00
 ```
 
 ---
@@ -139,39 +145,26 @@ As imagens utilizadas no laboratório estão organizadas na pasta `/images`.
 
 ## Dashboard AWS
 
-![Dashboard AWS](./images/dashboard-aws.png)
+![Dashboard AWS](images/Dashboard-AWS.jpeg)
 
 ---
 
 ## Amazon EC2
 
-![EC2](./images/ec2-dashboard.png)
+![EC2](images/EC2-AWS.jpeg)
 
 ---
 
 ## Instâncias EC2
 
-![Instâncias EC2](./images/instancias-ec2.png)
+![Instâncias EC2](images/Instâncias-AWS.jpeg)
 
 ---
 
 ## Security Groups
 
-![Security Groups](./images/security-groups.png)
+![Security Groups](images/Security-Group-AWS.jpeg)
 
----
-
-## Amazon S3
-
-![Amazon S3](./images/s3-dashboard.png)
-
----
-
-## Instância em Execução
-
-![Instância Rodando](./images/instancia-rodando.png)
-
----
 
 # 📖 Aprendizados Obtidos
 
@@ -208,7 +201,8 @@ Esses desafios contribuíram para um aprendizado mais completo da plataforma.
 - Git
 - GitHub
 - Markdown
-- Linux
+- Windows
+- Power Shell
 
 ---
 
@@ -221,11 +215,9 @@ aws-ec2-lab/
 │
 └── images/
     ├── Dashboard-Aws.jpeg
-    ├── ec2-dashboard.png
-    ├── instancias-ec2.png
-    ├── security-groups.png
-    ├── s3-dashboard.png
-    └── instancia-rodando.png
+    ├── EC2-AWS.jpeg
+    ├── Instâncias-AWS.jpeg
+    ├── Security-Group-AWS.jpeg
 ```
 
 ---
